@@ -53,6 +53,9 @@ window.addEventListener('click', (event) => {
 
     card.querySelector('[data-counter]').innerText = '1';
     toggleCartStatus();
+
+    calcCartPriceDelivery()
+
   };
 
 });

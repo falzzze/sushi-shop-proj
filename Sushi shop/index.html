@@ -24,7 +24,7 @@
 	<div class="container mb-5">
 		<div class="row">
 			<div class="col-md-8">
-				<div class="row">
+				<div class="row" id="products-container">
 
 					<!-- Ролл -->
 					<div class="col-md-6">
@@ -163,7 +163,10 @@
 
 						<!-- Стоимость заказа -->
 						<div class="cart-total">
-							<p><span class="h5">Доставка:</span> <span class="delivery-cost free">бесплатно</span> </p>
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span> 
+								<span class="delivery-cost">250 ₽</span> </p>
+								<span calss="small">Бесплатная доставка при заказе от 800 рублей</span>
 							<p><span class="h5">Итого:</span> <span class="total-price">0</span> <span class="rouble">₽</span></p>
 						</div>
 						<!-- // Стоимость заказа -->
@@ -190,7 +193,8 @@
 		</div>
 	</div>
 
-	<!-- Подключаем скрипты -->
+	<!-- скрипты -->
+	<script src="js/renderProducts.js"></script>
 	<script src="js/calcCartPrice.js"></script>
 	<script src="js/toggleCartStatus.js"></script>
 	<script src="js/counter.js"></script>

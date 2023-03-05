@@ -24,9 +24,14 @@ window.addEventListener('click', (event) => {
     } else if (event.target.closest(".cart-wrapper") && +counter.innerText == 1) {
       event.target.closest(".cart-item").remove();
       toggleCartStatus();
+      calcCartPriceDelivery();
+
     }
 
-
-
   }
+
+  if (event.target.hasAttribute('data-action') && event.target.closest('cart-wrapper')) {
+    calcCartPriceDelivery();
+  }
+
 });
